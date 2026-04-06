@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FastTrack Support</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #1f2530;
+      --muted: #5f6878;
+      --line: #d8deea;
+      --accent: #1777ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 42%);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+    .hero, .section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(25, 42, 70, 0.06);
+    }
+    .hero { padding: 28px; margin-bottom: 18px; }
+    .section { padding: 24px 28px; margin-top: 16px; }
+    h1 { margin: 0 0 10px; font-size: 34px; line-height: 1.1; }
+    h2 { margin: 0 0 14px; font-size: 20px; }
+    p, li {
+      color: var(--muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+    ul, ol { margin: 12px 0 0 22px; padding: 0; }
+    li + li { margin-top: 8px; }
+    .meta { margin-top: 14px; display: flex; gap: 18px; flex-wrap: wrap; color: var(--muted); }
+    .meta a, .nav a { color: var(--accent); text-decoration: none; }
+    .nav { margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>FastTrack Support</h1>
+      <p>FastTrack for macOS combines fast text translation and local clipboard management in one menu bar workflow.</p>
+      <div class="meta">
+        <span>Support email: <a href="mailto:leleway@outlook.com">leleway@outlook.com</a></span>
+        <span>Privacy Policy: <a href="./privacy.html">View policy</a></span>
+      </div>
+      <div class="nav"><a href="./index.html">Back to home</a></div>
+    </section>
+
+    <section class="section">
+      <h2>App Overview</h2>
+      <ul>
+        <li>Translate selected text from the menu bar or a keyboard shortcut</li>
+        <li>Store copied text and images in a local clipboard history</li>
+        <li>Keep frequently used items in pinned clipboard slots</li>
+        <li>Paste what you need back into your current app quickly</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>System Requirements</h2>
+      <p>macOS 15.0 or later.</p>
+    </section>
+
+    <section class="section">
+      <h2>Enable Accessibility</h2>
+      <p>FastTrack uses Accessibility permission only to read text that you actively select when you trigger translation.</p>
+      <ol>
+        <li>Open FastTrack Settings.</li>
+        <li>Click the button to enable Accessibility access.</li>
+        <li>In macOS System Settings, allow FastTrack under Privacy &amp; Security &gt; Accessibility.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Enable Automation for Shortcuts Events</h2>
+      <p>FastTrack uses Apple's Shortcuts Events process to run its built-in system translation shortcut.</p>
+      <ol>
+        <li>Open macOS System Settings.</li>
+        <li>Go to Privacy &amp; Security &gt; Automation.</li>
+        <li>Allow FastTrack to control Shortcuts Events.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Purchase Help</h2>
+      <p>The Mac App Store version offers a one-time full unlock purchase.</p>
+      <ol>
+        <li>Open the purchase screen in FastTrack.</li>
+        <li>Click <strong>Restore Purchases</strong>.</li>
+        <li>Make sure you are signed in with the same Apple ID used for the purchase.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Clipboard Notes</h2>
+      <p>Clipboard history is stored locally on your Mac. You can disable capture or clear unlocked history from the app settings.</p>
+    </section>
+
+    <section class="section">
+      <h2>Feedback</h2>
+      <p>When contacting support, include your macOS version, FastTrack app version, a short description of the issue, and a screenshot if the issue is visual.</p>
+    </section>
+  </main>
+</body>
+</html>
