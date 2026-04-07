@@ -4,124 +4,162 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FastTrack Privacy Policy</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #f6f7fb;
-      --card: #ffffff;
-      --text: #1f2530;
-      --muted: #5f6878;
-      --line: #d8deea;
-      --accent: #1777ff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 42%);
-      color: var(--text);
-    }
-    .wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 48px 20px 72px;
-    }
-    .hero, .section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(25, 42, 70, 0.06);
-    }
-    .hero { padding: 28px; margin-bottom: 18px; }
-    .section { padding: 24px 28px; margin-top: 16px; }
-    h1 { margin: 0 0 10px; font-size: 34px; line-height: 1.1; }
-    h2 { margin: 0 0 14px; font-size: 20px; }
-    p, li {
-      color: var(--muted);
-      line-height: 1.7;
-      margin: 0;
-    }
-    ul { margin: 12px 0 0 22px; padding: 0; }
-    li + li { margin-top: 8px; }
-    .meta { margin-top: 14px; display: flex; gap: 18px; flex-wrap: wrap; color: var(--muted); }
-    .meta a, .nav a { color: var(--accent); text-decoration: none; }
-    .nav { margin-top: 12px; }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <main class="wrap">
-    <section class="hero">
-      <h1>FastTrack Privacy Policy</h1>
-      <p>Effective date: April 6, 2026</p>
-      <div class="meta">
-        <span>Contact email: <a href="mailto:fasttrack@showleafy.com">fasttrack@showleafy.com</a></span>
+  <main class="site-shell">
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-mark">F</div>
+        <div class="brand-copy">
+          <strong>FastTrack for macOS</strong>
+          <span>Privacy Policy · Public App Disclosure</span>
+        </div>
       </div>
-      <div class="nav"><a href="./index.html">Back to home</a></div>
-    </section>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="./index.html">Home</a>
+        <a href="./support.html">Support</a>
+        <a href="./privacy.html" aria-current="page">Privacy</a>
+      </nav>
+    </header>
 
-    <section class="section">
-      <h2>Overview</h2>
-      <p>FastTrack is a macOS menu bar utility for selection translation and local clipboard management.</p>
-    </section>
+    <div class="doc-layout">
+      <article class="doc-main">
+        <section class="hero">
+          <span class="eyebrow">FastTrack Privacy Policy</span>
+          <h1>Privacy Policy</h1>
+          <p class="hero-subtitle">
+            This page explains what FastTrack for macOS processes on device, which permissions it uses, and what data it does not collect or share.
+            This policy currently applies to distribution regions outside mainland China.
+          </p>
+          <div class="hero-meta">
+            <span><strong>Effective Date</strong> 2026-04-07</span>
+            <span><strong>Contact Email</strong> <a href="mailto:fasttrack@showleafy.com">fasttrack@showleafy.com</a></span>
+          </div>
+          <div class="language-switch" aria-label="Language switch">
+            <a href="./privacy.html" aria-current="page">English</a>
+            <a href="./privacy.zh.html">中文</a>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>Data We Collect</h2>
-      <p>FastTrack does not collect personal data on our servers. The app does not require account registration and does not upload clipboard history, selected text, or translation results to a developer-operated backend service.</p>
-    </section>
+        <section id="overview" class="doc-section">
+          <h2>Overview</h2>
+          <p class="section-subtitle">Product scope</p>
+          <div class="doc-content">
+            <p>FastTrack for macOS is a local menu bar productivity tool for selection translation, clipboard history, pinned slots, and quick paste workflows. This policy applies to the FastTrack app itself and does not replace the privacy terms of the Apple App Store or macOS.</p>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>Data Processed on Device</h2>
-      <ul>
-        <li>Text you actively select for translation</li>
-        <li>Clipboard text and images that you copy, when clipboard capture is enabled</li>
-        <li>Local app preferences and purchase status needed to unlock features</li>
-      </ul>
-      <p style="margin-top: 12px;">This data is processed locally on your device and is used only to provide the app's features.</p>
-    </section>
+        <section id="not-collected" class="doc-section">
+          <h2>What We Do Not Collect</h2>
+          <p class="section-subtitle">No developer backend or tracking</p>
+          <div class="doc-content">
+            <ul>
+              <li>FastTrack does not require an account and does not provide a developer-operated account system.</li>
+              <li>FastTrack does not run a developer backend that receives your selected text, translation results, clipboard history, or translation history.</li>
+              <li>FastTrack does not include advertising SDKs, analytics SDKs, crash reporting SDKs, tracking, profiling, or personalized advertising.</li>
+              <li>FastTrack does not share user data with third parties, except where Apple processes App Store purchases as part of its platform services.</li>
+            </ul>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>Permissions</h2>
-      <ul>
-        <li>Accessibility: used to read text that you actively select in another app when you trigger translation</li>
-        <li>Automation / Apple Events: used only to communicate with Apple's Shortcuts Events process so the app can run its built-in system translation shortcut</li>
-      </ul>
-    </section>
+        <section id="local-data" class="doc-section">
+          <h2>Data Processed and Stored Locally</h2>
+          <p class="section-subtitle">On-device data only</p>
+          <div class="doc-content">
+            <p>To provide its features, FastTrack may process or store the following data locally on your Mac:</p>
+            <ul>
+              <li>Text that you actively select for translation</li>
+              <li>Text and images copied to the clipboard when clipboard capture is enabled</li>
+              <li>Local translation history for the history window</li>
+              <li>App preferences such as target language, interface language, shortcuts, and clipboard options</li>
+              <li>Local purchase and unlock state needed to control feature availability</li>
+            </ul>
+            <p>This data is processed and stored on your device by default and is not uploaded to a developer-operated server.</p>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>Purchases</h2>
-      <p>The Mac App Store version offers a one-time non-consumable in-app purchase to unlock unlimited translations and all clipboard pinned slots. Purchase processing is handled by Apple through the App Store.</p>
-    </section>
+        <section id="permissions" class="doc-section">
+          <h2>Permissions and Purpose</h2>
+          <p class="section-subtitle">Accessibility and Automation</p>
+          <div class="doc-content">
+            <ul>
+              <li><strong>Accessibility</strong>: used only to read the currently selected text in another app when you explicitly trigger translation.</li>
+              <li><strong>Automation / Apple Events</strong>: used only to communicate with Apple’s <code>Shortcuts Events</code> process to run the built-in system translation shortcut.</li>
+            </ul>
+            <p>If you deny these permissions, FastTrack can still open, but related translation features will be limited or unavailable.</p>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>Third-Party Services</h2>
-      <p>FastTrack does not rely on third-party online translation APIs for its core translation workflow. Translation uses macOS system capabilities.</p>
-    </section>
+        <section id="apple-services" class="doc-section">
+          <h2>Third-Party Sharing and Apple Services</h2>
+          <p class="section-subtitle">Platform services only</p>
+          <div class="doc-content">
+            <p>The current version of FastTrack uses macOS system capabilities for its core translation workflow and does not integrate third-party online translation APIs. Mac App Store purchases are processed by Apple, and the developer does not receive your full payment details.</p>
+            <p>If FastTrack adds third-party analytics, crash reporting, cloud services, or online translation providers in the future, this policy and the App Store Connect privacy answers will be updated accordingly.</p>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>Data Retention and Control</h2>
-      <p>Clipboard history stored by FastTrack remains on your device unless you delete it.</p>
-      <ul>
-        <li>Disable clipboard capture</li>
-        <li>Clear unlocked clipboard history</li>
-        <li>Remove individual clipboard entries</li>
-        <li>Uninstall the app to remove its local data, subject to any remaining files in your user library</li>
-      </ul>
-    </section>
+        <section id="retention" class="doc-section">
+          <h2>Retention, Deletion, and Control</h2>
+          <p class="section-subtitle">How local data is handled</p>
+          <div class="doc-content">
+            <ul>
+              <li>Clipboard history remains on your device until you delete entries, clear unlocked history, reach an expiration policy, or uninstall the app.</li>
+              <li>Translation history remains in the local app support directory until you remove the local data or uninstall the app.</li>
+              <li>You can disable clipboard capture in FastTrack Settings to reduce future local records.</li>
+              <li>You can revoke Accessibility or Automation permissions in macOS System Settings.</li>
+            </ul>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>Children's Privacy</h2>
-      <p>FastTrack is not directed to children and does not knowingly collect personal information from children.</p>
-    </section>
+        <section id="children-region" class="doc-section">
+          <h2>Children and Region</h2>
+          <p class="section-subtitle">Audience and availability</p>
+          <div class="doc-content">
+            <p>FastTrack is not directed to children and does not knowingly collect personal information from children. This policy currently applies to distribution regions outside mainland China.</p>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>Changes to This Policy</h2>
-      <p>If this policy changes, the updated version will be published at the same URL with a new effective date.</p>
-    </section>
+        <section id="changes" class="doc-section">
+          <h2>Changes to This Policy</h2>
+          <p class="section-subtitle">Future updates</p>
+          <div class="doc-content">
+            <p>If FastTrack changes its data handling, third-party dependencies, or distribution scope, this page will be updated and the effective date will be revised.</p>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>Contact</h2>
-      <p>If you have questions about this policy, contact <a href="mailto:fasttrack@showleafy.com">fasttrack@showleafy.com</a>.</p>
-    </section>
+        <section id="contact" class="doc-section">
+          <h2>Contact</h2>
+          <p class="section-subtitle">Questions about privacy</p>
+          <div class="doc-content">
+            <p>If you have any questions about this policy, contact us at <a href="mailto:fasttrack@showleafy.com">fasttrack@showleafy.com</a>.</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="./index.html">Back to home</a>
+            <a href="./support.html">View support page</a>
+          </div>
+        </section>
+      </article>
+
+      <aside class="doc-aside">
+        <nav class="toc" aria-label="Page sections">
+          <h2>On this page</h2>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#not-collected">Not Collected</a></li>
+            <li><a href="#local-data">Local Data</a></li>
+            <li><a href="#permissions">Permissions</a></li>
+            <li><a href="#apple-services">Apple Services</a></li>
+            <li><a href="#retention">Retention</a></li>
+            <li><a href="#children-region">Children and Region</a></li>
+            <li><a href="#changes">Changes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
   </main>
 </body>
 </html>

@@ -4,116 +4,159 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FastTrack Support</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #f6f7fb;
-      --card: #ffffff;
-      --text: #1f2530;
-      --muted: #5f6878;
-      --line: #d8deea;
-      --accent: #1777ff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 42%);
-      color: var(--text);
-    }
-    .wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 48px 20px 72px;
-    }
-    .hero, .section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(25, 42, 70, 0.06);
-    }
-    .hero { padding: 28px; margin-bottom: 18px; }
-    .section { padding: 24px 28px; margin-top: 16px; }
-    h1 { margin: 0 0 10px; font-size: 34px; line-height: 1.1; }
-    h2 { margin: 0 0 14px; font-size: 20px; }
-    p, li {
-      color: var(--muted);
-      line-height: 1.7;
-      margin: 0;
-    }
-    ul, ol { margin: 12px 0 0 22px; padding: 0; }
-    li + li { margin-top: 8px; }
-    .meta { margin-top: 14px; display: flex; gap: 18px; flex-wrap: wrap; color: var(--muted); }
-    .meta a, .nav a { color: var(--accent); text-decoration: none; }
-    .nav { margin-top: 12px; }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <main class="wrap">
-    <section class="hero">
-      <h1>FastTrack Support</h1>
-      <p>FastTrack for macOS combines fast text translation and local clipboard management in one menu bar workflow.</p>
-      <div class="meta">
-        <span>Support email: <a href="mailto:fasttrack@showleafy.com">fasttrack@showleafy.com</a></span>
-        <span>Privacy Policy: <a href="./privacy.html">View policy</a></span>
+  <main class="site-shell">
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-mark">F</div>
+        <div class="brand-copy">
+          <strong>FastTrack for macOS</strong>
+          <span>Support Page · Self-Service Help</span>
+        </div>
       </div>
-      <div class="nav"><a href="./index.html">Back to home</a></div>
-    </section>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="./index.html">Home</a>
+        <a href="./support.html" aria-current="page">Support</a>
+        <a href="./privacy.html">Privacy</a>
+      </nav>
+    </header>
 
-    <section class="section">
-      <h2>App Overview</h2>
-      <ul>
-        <li>Translate selected text from the menu bar or a keyboard shortcut</li>
-        <li>Store copied text and images in a local clipboard history</li>
-        <li>Keep frequently used items in pinned clipboard slots</li>
-        <li>Paste what you need back into your current app quickly</li>
-      </ul>
-    </section>
+    <div class="doc-layout">
+      <article class="doc-main">
+        <section class="hero">
+          <span class="eyebrow">FastTrack Support</span>
+          <h1>Support</h1>
+          <p class="hero-subtitle">
+            This page collects setup guidance, permission steps, purchase recovery details, and self-service troubleshooting for FastTrack for macOS.
+          </p>
+          <div class="hero-meta">
+            <span><strong>Last Updated</strong> 2026-04-07</span>
+            <span><strong>Support Email</strong> <a href="mailto:fasttrack@showleafy.com">fasttrack@showleafy.com</a></span>
+            <span><strong>Privacy Policy</strong> <a href="./privacy.html">privacy.html</a></span>
+          </div>
+          <div class="language-switch" aria-label="Language switch">
+            <a href="./support.html" aria-current="page">English</a>
+            <a href="./support.zh.html">中文</a>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>System Requirements</h2>
-      <p>macOS 15.0 or later.</p>
-    </section>
+        <section id="overview" class="doc-section">
+          <h2>Overview</h2>
+          <p class="section-subtitle">What FastTrack provides</p>
+          <div class="doc-content">
+            <p>FastTrack for macOS is built around two core tools: fast translation and clipboard management. It lets you trigger translation from the menu bar or a keyboard shortcut, while also managing local clipboard history, pinned slots, and quick paste workflows.</p>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>Enable Accessibility</h2>
-      <p>FastTrack uses Accessibility permission only to read text that you actively select when you trigger translation.</p>
-      <ol>
-        <li>Open FastTrack Settings.</li>
-        <li>Click the button to enable Accessibility access.</li>
-        <li>In macOS System Settings, allow FastTrack under Privacy &amp; Security &gt; Accessibility.</li>
-      </ol>
-    </section>
+        <section id="quick-start" class="doc-section">
+          <h2>Quick Start</h2>
+          <p class="section-subtitle">Basic workflow</p>
+          <div class="doc-content">
+            <ol>
+              <li>Launch FastTrack and open the main menu from the menu bar icon.</li>
+              <li>Before using translation for the first time, verify that the built-in system translation shortcut is installed and grant the required permissions in Settings.</li>
+              <li>Select text in any app, then choose Translate Current Selection from the menu bar or use the configured shortcut.</li>
+              <li>After copying text or images, open the clipboard panel to review recent history and pinned slots.</li>
+            </ol>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>Enable Automation for Shortcuts Events</h2>
-      <p>FastTrack uses Apple's Shortcuts Events process to run its built-in system translation shortcut.</p>
-      <ol>
-        <li>Open macOS System Settings.</li>
-        <li>Go to Privacy &amp; Security &gt; Automation.</li>
-        <li>Allow FastTrack to control Shortcuts Events.</li>
-      </ol>
-    </section>
+        <section id="permissions" class="doc-section">
+          <h2>Permissions</h2>
+          <p class="section-subtitle">Accessibility and Automation</p>
+          <div class="doc-content">
+            <p><strong>Accessibility</strong> is used only to read the currently selected text in another app when you explicitly trigger translation.</p>
+            <ol>
+              <li>Open FastTrack Settings.</li>
+              <li>Use the in-app button to open System Settings.</li>
+              <li>Allow FastTrack under System Settings &gt; Privacy &amp; Security &gt; Accessibility.</li>
+            </ol>
 
-    <section class="section">
-      <h2>Purchase Help</h2>
-      <p>The Mac App Store version offers a one-time full unlock purchase.</p>
-      <ol>
-        <li>Open the purchase screen in FastTrack.</li>
-        <li>Click <strong>Restore Purchases</strong>.</li>
-        <li>Make sure you are signed in with the same Apple ID used for the purchase.</li>
-      </ol>
-    </section>
+            <p><strong>Automation / Apple Events</strong> is used only to communicate with Apple’s <code>Shortcuts Events</code> process in order to run the built-in system translation shortcut.</p>
+            <ol>
+              <li>Open System Settings &gt; Privacy &amp; Security &gt; Automation.</li>
+              <li>Allow FastTrack to control <code>Shortcuts Events</code>.</li>
+            </ol>
 
-    <section class="section">
-      <h2>Clipboard Notes</h2>
-      <p>Clipboard history is stored locally on your Mac. You can disable capture or clear unlocked history from the app settings.</p>
-    </section>
+            <p>If you deny these permissions, FastTrack can still launch, but selection-based translation features will not work correctly.</p>
+          </div>
+        </section>
 
-    <section class="section">
-      <h2>Feedback</h2>
-      <p>When contacting support, include your macOS version, FastTrack app version, a short description of the issue, and a screenshot if the issue is visual.</p>
-    </section>
+        <section id="purchase" class="doc-section">
+          <h2>Purchases</h2>
+          <p class="section-subtitle">Unlock and restore</p>
+          <div class="doc-content">
+            <p>The Mac App Store version offers a one-time unlock called <strong>Fast track Pro</strong>. It removes translation limits and unlocks all clipboard pinned slots.</p>
+            <ol>
+              <li>Open the purchase screen inside FastTrack.</li>
+              <li>If the unlock is not active, click <strong>Restore Purchases</strong>.</li>
+              <li>Make sure you are signed in with the same Apple ID used for the purchase.</li>
+            </ol>
+            <p>If restore still fails, email support with your macOS version, app version, a screenshot of the purchase screen, and a short problem description.</p>
+          </div>
+        </section>
+
+        <section id="local-data" class="doc-section">
+          <h2>Clipboard and Local Data</h2>
+          <p class="section-subtitle">What stays on device</p>
+          <div class="doc-content">
+            <p>FastTrack keeps clipboard history and translation history on your Mac only. This data is not synced to a developer-operated server.</p>
+            <ul>
+              <li>You can disable clipboard capture in Settings.</li>
+              <li>You can remove individual clipboard entries or clear unlocked history.</li>
+              <li>Translation history is stored locally in the app support directory for the history window.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="faq" class="doc-section">
+          <h2>Frequently Asked Questions</h2>
+          <p class="section-subtitle">Common problems</p>
+          <div class="doc-content">
+            <p><strong>Selected text does not translate</strong><br>Check Accessibility and Automation permissions, and verify that the built-in system translation shortcut has been installed.</p>
+            <p><strong>Automation error mentioning Shortcuts Events</strong><br>Open System Settings &gt; Privacy &amp; Security &gt; Automation and allow FastTrack to control <code>Shortcuts Events</code>.</p>
+            <p><strong>Clipboard capture is not recording new items</strong><br>Check whether clipboard capture is disabled, and make sure the copy action happened while FastTrack was running.</p>
+            <p><strong>Purchase completed but features are still locked</strong><br>Use Restore Purchases on the purchase screen and relaunch the app if needed.</p>
+          </div>
+        </section>
+
+        <section id="contact" class="doc-section">
+          <h2>Contact Support</h2>
+          <p class="section-subtitle">How to reach us</p>
+          <div class="doc-content">
+            <p>For support, contact <a href="mailto:fasttrack@showleafy.com">fasttrack@showleafy.com</a> and include the following where possible:</p>
+            <ul>
+              <li>Your macOS version</li>
+              <li>Your FastTrack version</li>
+              <li>A short description of the issue and reproduction steps</li>
+              <li>A screenshot or screen recording if the issue is visual</li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <a href="./index.html">Back to home</a>
+            <a href="./privacy.html">View privacy policy</a>
+          </div>
+        </section>
+      </article>
+
+      <aside class="doc-aside">
+        <nav class="toc" aria-label="Page sections">
+          <h2>On this page</h2>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#quick-start">Quick Start</a></li>
+            <li><a href="#permissions">Permissions</a></li>
+            <li><a href="#purchase">Purchases</a></li>
+            <li><a href="#local-data">Local Data</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
   </main>
 </body>
 </html>
