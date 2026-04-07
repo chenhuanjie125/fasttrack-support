@@ -4,37 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FastTrack 支持页</title>
+  <link rel="icon" href="./assets/app-icon.png">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="site-shell">
     <header class="site-header">
-      <div class="brand">
-        <div class="brand-mark">F</div>
+      <a class="brand" href="./index.zh.html" aria-label="FastTrack 首页">
+        <img class="brand-icon" src="./assets/app-icon.png" alt="FastTrack 应用图标">
         <div class="brand-copy">
           <strong>FastTrack for macOS</strong>
-          <span>支持页 · 自助排障文档</span>
+          <span>支持与自助排障文档</span>
         </div>
-      </div>
+      </a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="./index.html">首页</a>
+        <a href="./index.zh.html">首页</a>
         <a href="./support.zh.html" aria-current="page">支持页</a>
         <a href="./privacy.zh.html">隐私页</a>
+        <a href="./support.html">English</a>
       </nav>
     </header>
 
     <div class="doc-layout">
       <article class="doc-main">
         <section class="hero">
-          <span class="eyebrow">FastTrack Support</span>
+          <span class="eyebrow">支持页</span>
           <h1>支持页</h1>
           <p class="hero-subtitle">
-            这里汇总了 FastTrack for macOS 的快速开始、权限设置、购买恢复和自助排障说明，便于您在提交审核或正式使用前快速定位问题。
+            这里汇总了 FastTrack for macOS 的快速开始、权限设置、购买恢复和自助排障说明，便于您在正式使用前快速定位问题。
           </p>
           <div class="hero-meta">
             <span><strong>最近更新</strong> 2026-04-07</span>
             <span><strong>支持邮箱</strong> <a href="mailto:fasttrack@showleafy.com">fasttrack@showleafy.com</a></span>
-            <span><strong>隐私政策</strong> <a href="./privacy.zh.html">privacy.zh.html</a></span>
+            <span><strong>隐私政策</strong> <a href="./privacy.zh.html">打开页面</a></span>
           </div>
           <div class="language-switch" aria-label="Language switch">
             <a href="./support.html">English</a>
@@ -44,28 +46,28 @@
 
         <section id="overview" class="doc-section">
           <h2>概述</h2>
-          <p class="section-subtitle">Overview</p>
+          <p class="section-subtitle">FastTrack 提供什么</p>
           <div class="doc-content">
-            <p>FastTrack for macOS 主要由两个工具模块组成：快速翻译与剪贴板管理。您可以从菜单栏或快捷键发起选中文本翻译，也可以管理本地剪贴板历史、锁定位和快速粘贴流程。</p>
+            <p>FastTrack for macOS 主要由两个工具模块组成：快速翻译与剪切板管理。您可以从菜单栏或快捷键发起选中文本翻译，也可以管理本地剪切板历史、锁定位和快速粘贴流程。</p>
           </div>
         </section>
 
         <section id="quick-start" class="doc-section">
           <h2>快速开始</h2>
-          <p class="section-subtitle">Quick Start</p>
+          <p class="section-subtitle">基础使用流程</p>
           <div class="doc-content">
             <ol>
               <li>启动 FastTrack 后，从菜单栏图标打开主菜单。</li>
               <li>第一次使用翻译功能前，请先确认已安装内置系统翻译快捷指令，并在设置页授予所需权限。</li>
               <li>在任意应用中选中文本后，可从菜单栏选择“翻译当前选区”，或使用已配置的快捷键发起翻译。</li>
-              <li>复制文本或图片后，可通过剪贴板面板查看最近历史和锁定位。</li>
+              <li>复制文本或图片后，可通过剪切板面板查看最近历史和锁定位。</li>
             </ol>
           </div>
         </section>
 
         <section id="permissions" class="doc-section">
           <h2>权限设置</h2>
-          <p class="section-subtitle">Permissions</p>
+          <p class="section-subtitle">辅助功能与自动化</p>
           <div class="doc-content">
             <p><strong>辅助功能权限</strong> 仅用于在您主动触发翻译时读取其他应用中的当前选中文本。</p>
             <ol>
@@ -86,9 +88,9 @@
 
         <section id="purchase" class="doc-section">
           <h2>购买与恢复购买</h2>
-          <p class="section-subtitle">Purchases</p>
+          <p class="section-subtitle">一次性买断</p>
           <div class="doc-content">
-            <p>Mac App Store 版本提供一次性买断项目 <strong>Fast track Pro</strong>。购买后可解锁无限翻译次数和全部剪贴板锁定位。</p>
+            <p>Mac App Store 版本提供一次性买断项目 <strong>Fast track Pro</strong>。购买后可解锁无限翻译次数和全部剪切板锁定位。</p>
             <ol>
               <li>打开 FastTrack 内的购买界面。</li>
               <li>如已购买但未生效，点击 <strong>Restore Purchases</strong>。</li>
@@ -99,13 +101,13 @@
         </section>
 
         <section id="local-data" class="doc-section">
-          <h2>剪贴板与本地数据说明</h2>
-          <p class="section-subtitle">Clipboard and Local Data</p>
+          <h2>剪切板与本地数据说明</h2>
+          <p class="section-subtitle">本地保存范围</p>
           <div class="doc-content">
-            <p>FastTrack 的剪贴板历史和翻译历史默认只保存在您的 Mac 本地，不会同步到开发者服务器。</p>
+            <p>FastTrack 的剪切板历史和翻译历史默认只保存在您的 Mac 本地，不会同步到开发者服务器。</p>
             <ul>
-              <li>可在设置中关闭剪贴板捕获。</li>
-              <li>可删除单条剪贴板记录或清空未锁定历史。</li>
+              <li>可在设置中关闭剪切板捕获。</li>
+              <li>可删除单条剪切板记录或清空未锁定历史。</li>
               <li>翻译历史会保存在本地应用支持目录，用于历史窗口展示。</li>
             </ul>
           </div>
@@ -113,18 +115,18 @@
 
         <section id="faq" class="doc-section">
           <h2>常见问题</h2>
-          <p class="section-subtitle">FAQ</p>
+          <p class="section-subtitle">自助排障</p>
           <div class="doc-content">
             <p><strong>选中文本无法翻译</strong><br>请先检查辅助功能权限和自动化权限是否已授权，并确认内置系统翻译快捷指令已安装。</p>
             <p><strong>提示 Shortcuts Events 权限错误</strong><br>请前往“系统设置 &gt; 隐私与安全性 &gt; 自动化”开启 FastTrack 对 <code>Shortcuts Events</code> 的权限。</p>
-            <p><strong>剪贴板没有捕获新内容</strong><br>请检查是否关闭了剪贴板捕获开关，并确认复制动作发生在 FastTrack 运行期间。</p>
+            <p><strong>剪切板没有捕获新内容</strong><br>请检查是否关闭了剪切板捕获开关，并确认复制动作发生在 FastTrack 运行期间。</p>
             <p><strong>购买已完成但未解锁</strong><br>请在购买界面执行恢复购买，必要时重启 App 后重试。</p>
           </div>
         </section>
 
         <section id="contact" class="doc-section">
           <h2>联系支持</h2>
-          <p class="section-subtitle">Contact</p>
+          <p class="section-subtitle">提交问题时建议附带的信息</p>
           <div class="doc-content">
             <p>如需联系支持，请发送邮件至 <a href="mailto:fasttrack@showleafy.com">fasttrack@showleafy.com</a>，并尽量附上以下信息：</p>
             <ul>
@@ -136,7 +138,7 @@
           </div>
 
           <div class="footer-links">
-            <a href="./index.html">返回首页</a>
+            <a href="./index.zh.html">返回首页</a>
             <a href="./privacy.zh.html">查看隐私政策</a>
           </div>
         </section>
@@ -150,7 +152,7 @@
             <li><a href="#quick-start">快速开始</a></li>
             <li><a href="#permissions">权限设置</a></li>
             <li><a href="#purchase">购买与恢复</a></li>
-            <li><a href="#local-data">剪贴板与本地数据</a></li>
+            <li><a href="#local-data">剪切板与本地数据</a></li>
             <li><a href="#faq">常见问题</a></li>
             <li><a href="#contact">联系支持</a></li>
           </ul>

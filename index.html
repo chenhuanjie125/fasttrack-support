@@ -1,68 +1,71 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FastTrack for macOS</title>
+  <link rel="icon" href="./assets/app-icon.png">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <main class="site-shell">
-    <header class="site-header">
-      <div class="brand">
-        <div class="brand-mark">F</div>
+  <main class="site-shell site-shell-home">
+    <header class="site-header home-header">
+      <a class="brand" href="./index.html" aria-label="FastTrack home">
+        <img class="brand-icon" src="./assets/app-icon.png" alt="FastTrack app icon">
         <div class="brand-copy">
           <strong>FastTrack for macOS</strong>
-          <span>Support Center · Privacy Policy</span>
+          <span>Fast translation and local clipboard workflow</span>
         </div>
+      </a>
+
+      <div class="header-search" aria-hidden="true">
+        <span>Search</span>
+        <kbd>⌘K</kbd>
       </div>
+
       <nav class="site-nav" aria-label="Primary">
-        <a href="./index.html" aria-current="page">首页 / Home</a>
-        <a href="./support.html">支持页 / Support</a>
-        <a href="./privacy.html">隐私页 / Privacy</a>
+        <a href="./support.html">Support</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./index.zh.html">中文</a>
       </nav>
     </header>
 
-    <section class="hero">
-      <span class="eyebrow">FastTrack Public Docs</span>
-      <h1>FastTrack 支持与隐私文档</h1>
-      <p class="hero-subtitle">
-        FastTrack for macOS 是一款以菜单栏为中心的效率工具，专注于快速翻译与本地剪贴板管理。
-        此站点用于公开提供技术支持、权限说明和隐私政策。
-      </p>
-      <div class="hero-meta">
-        <span><strong>Support Email</strong> <a href="mailto:fasttrack@showleafy.com">fasttrack@showleafy.com</a></span>
-        <span><strong>Public URL</strong> fasttrack.leleway.com</span>
+    <section class="home-hero">
+      <div class="home-copy">
+        <p class="home-label">FastTrack</p>
+        <h1>Translation and clipboard tools for a faster macOS workflow</h1>
+        <p class="home-summary">
+          Translate selected text quickly, keep copied text and images organized, and paste what you need instantly from the menu bar.
+        </p>
+        <div class="home-actions">
+          <a class="button button-primary" href="./support.html">Get Started</a>
+          <a class="button button-secondary" href="./privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-art-glow"></div>
+        <img class="hero-art-icon" src="./assets/app-icon.png" alt="">
       </div>
     </section>
 
-    <section class="doc-section">
-      <h2>文档入口</h2>
-      <p class="section-subtitle">Documentation Links</p>
-
-      <div class="home-grid">
-        <a class="home-tile" href="./support.html">
-          <strong>支持页 / Support</strong>
-          <p>查看快速开始、权限设置、购买恢复、常见问题和联系支持说明。</p>
-        </a>
-        <a class="home-tile" href="./privacy.html">
-          <strong>隐私政策 / Privacy Policy</strong>
-          <p>查看 FastTrack 在本地如何处理数据、需要哪些权限，以及不会收集哪些数据。</p>
-        </a>
-      </div>
-
-      <div class="copy-grid">
-        <div class="copy-block">
-          <span class="copy-label">中文</span>
-          <p>FastTrack 不依赖开发者自建服务器，不创建账号，也不会把您的选中文本、翻译结果、剪贴板历史上传到开发者运营的后端服务。</p>
-          <p>如果您正在准备 Mac App Store 上架材料，可以直接使用此站点中的支持页和隐私页作为公开 URL。</p>
-        </div>
-        <div class="copy-block">
-          <span class="copy-label">English</span>
-          <p>FastTrack does not use a developer-operated backend, does not require accounts, and does not upload your selected text, translation results, or clipboard history to a developer server.</p>
-          <p>If you are preparing Mac App Store submission materials, this site provides the public support and privacy URLs for FastTrack.</p>
-        </div>
-      </div>
+    <section class="feature-grid" aria-label="Key features">
+      <article class="feature-card">
+        <h2>Fast Translation</h2>
+        <p>Translate selected text from the menu bar or a shortcut without breaking your current task.</p>
+      </article>
+      <article class="feature-card">
+        <h2>Clipboard Management</h2>
+        <p>Keep copied text and images locally organized with history, pinned slots, and quick paste actions.</p>
+      </article>
+      <article class="feature-card">
+        <h2>Local-First</h2>
+        <p>Your selected text, clipboard history, and translation history stay on your Mac by default.</p>
+      </article>
+      <article class="feature-card">
+        <h2>Public Docs</h2>
+        <p>Use the support page and privacy policy for setup guidance, permissions, App Store review, and compliance.</p>
+      </article>
     </section>
   </main>
 </body>
