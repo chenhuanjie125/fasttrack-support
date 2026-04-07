@@ -109,36 +109,6 @@ img {
   font-size: 13px;
 }
 
-.header-search {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  min-width: 180px;
-  min-height: 42px;
-  padding: 0 14px;
-  border-radius: 14px;
-  background: var(--bg-soft);
-  border: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.header-search kbd {
-  margin-left: auto;
-  min-width: 34px;
-  height: 26px;
-  padding: 0 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  background: #fff;
-  border: 1px solid var(--line);
-  color: #7a8191;
-  font: inherit;
-  font-size: 12px;
-}
-
 .site-nav {
   display: flex;
   flex-wrap: wrap;
@@ -483,11 +453,6 @@ img {
 @media (max-width: 1080px) {
   .site-header {
     flex-wrap: wrap;
-  }
-
-  .header-search {
-    order: 3;
-    width: 100%;
   }
 
   .home-hero,
